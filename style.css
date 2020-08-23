@@ -26,7 +26,7 @@ form input,
 form button {
     padding: 0.5rem;
     border: none;
-    font-size: 2.4rem;
+    font-size: 2rem;
     background: white;
 }
 
@@ -59,7 +59,7 @@ form button:hover {
 }
 
 .todo-list {
-    min-width: 30%;
+    min-width: 35%;
     list-style: none;
 }
 
@@ -107,4 +107,45 @@ form button:hover {
 .fall {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #ff6f47;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+option {
+    font-size: 1.2rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #ff6f47;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: white;
+    color: #ff6f47
 }
