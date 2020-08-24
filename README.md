@@ -1,4 +1,4 @@
-# todo_list
+# TODO List Project
 ### here is a todo list project, that i made using JAVASCRIPT
 
 click here
