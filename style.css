@@ -149,3 +149,22 @@ option {
     background: white;
     color: #ff6f47
 }
+
+@media all and (max-width: 500px) {
+    form {
+        min-height: 10vh;
+        display: flex;
+        flex-direction: column;
+        min-width: 90%;
+        max-width: 100%;
+    }
+
+    .todo-list {
+        min-width: 65%;
+        list-style: none;
+    }
+
+    options {
+        font-size: 10rem;
+    }
+}
